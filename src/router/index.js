@@ -1,17 +1,21 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// import Login from '@/views/login'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/login',
+    name: 'login',
+    // @ 是 src 目录的别名，这是 VueCLI 项目中特殊的提供的
+    component: () => import('@/views/login')
+
+  }
 
   // {
-  //   path: '/about',
-  //   name: 'about',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  //   path: '/login',
+  //   component: Login
   // }
 ]
 

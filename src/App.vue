@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-   <router-view></router-view>
+    <!-- 路由出口 -->
+    <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'APP'
+  // 最好给每个组件都起一个名字
+  name: 'App'
 }
 </script>
 
-<style>
-
-</style>
+<style scoped lang="less"></style>
